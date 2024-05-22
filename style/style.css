@@ -1,0 +1,383 @@
+:root {
+  --primary-color: #c004d9;
+  --secundary-color: #9303a6;
+  --tertiary-color: #c004d9;
+  --cuaternary-color: #5d04d9;
+  --quinary-color: #03318c;
+  --h1-color: #000;
+  --card-color-texto: #ffffff;
+}
+
+html {
+  width: 100%;
+  background-color: white;
+}
+
+/* Header específico */
+.header {
+  display: flex;
+  width: 100%;
+  height: 6rem; /* 96px */
+  background-color: var(--cuaternary-color);
+  justify-content: center;
+  padding: 1.25rem 0; /* 20px */
+  align-items: center;
+}
+
+/* Main específico */
+main {
+  width: 90%;
+}
+
+.main-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  font-family: "Press Start 2P", monospace;
+  gap: 2.375rem;
+  border-radius: 0.625rem; /* 10px */
+  padding: 3.75rem;
+}
+
+.products-section {
+  width: 60%;
+  padding: 2.5rem; /* 40px */
+  gap: 2.5rem; /* 40px */
+  text-align: center;
+}
+
+.text-product {
+  font-weight: 400;
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.5rem; /* 24px */
+  color: var(--h1-color);
+  font-family: "Press Start 2P", cursive;
+}
+
+.main-container,
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.products-container {
+  width: 500px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en nuevas líneas si no caben en una sola fila */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  gap: 10px; /* Espacio entre las tarjetas */
+}
+
+.card {
+  flex: 0 0 calc(33.333% - 10px); /* Hace que cada tarjeta ocupe aproximadamente un tercio del ancho del contenedor, descontando el espacio entre ellas */
+  max-width: calc(33.333% - 10px); /* Ancho máximo para cada tarjeta */
+  height: 17rem; /* Ajusta la altura automáticamente según el contenido */
+  background-color: var(--cuaternary-color);
+  font-size: 0.75rem; /* 12px */
+  border-radius: 0.625rem; /* 10px */
+  padding: 0.625rem; /* 10px */
+  gap: 0.625rem; /* Espacio entre los elementos dentro de la tarjeta */
+  border: 0.1875rem solid var(--primary-color); /* Borde sólido */
+  box-shadow: -0.3125rem 0.375rem 0.20625rem 0px #00000040; /* Sombra */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+.img-container {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.img-container img {
+  width: 8.5rem; /* 180px */
+  height: 12rem; /* 200px */
+  border-radius: 0.3125rem; /* 5px */
+  border: 0.1875rem; /* 3px */
+  border-color: #000000;
+}
+
+.card-container--info {
+  margin-top: 0.625rem; /* 10px */
+  font-family: "IBM Plex Mono", monospace;
+  width: 11rem; /* 176px */
+  height: 1.25rem; /* 20px */
+  font-size: 0.9375rem; /* 15px */
+  line-height: 1.21875rem; /* 19.5px */
+  color: var(--card-color-texto);
+  text-align: left;
+  font-weight: 400;
+}
+
+.card-container--value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "IBM Plex Mono", monospace;
+  width: 8rem; /* 176px */
+  height: 1.5rem; /* 24px */
+  gap: 0.625rem; /* 10px */
+  color: var(--card-color-texto);
+  margin-bottom: 0;
+  font-size: 1rem; /* 16px */
+  font-weight: 700;
+}
+
+.delete-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem; /* 24px */
+  height: 1.5rem; /* 24px */
+  color: var(--cuaternary-color);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.delete-button:hover {
+  width: 1.625rem; /* 26px */
+  height: 1.625rem; /* 26px */
+}
+
+.delete-button:onclick active {
+  border-color: yellowgreen;
+  width: 1.5rem; /* 24px */
+  height: 1.5rem; /* 24px */
+}
+
+.delete-button img {
+  width: 1.5rem; /* 24px */
+  height: 1.5rem; /* 24px */
+}
+
+.section-form {
+  width: 35%;
+  height: 32.3125rem; /* 517px */
+  padding: 2.5rem; /* 40px */
+  gap: 2.5rem; /* 40px */
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.text-form {
+  width: 24.5rem; /* 392px */
+  height: 3rem; /* 48px */
+  font-family: "Press Start 2P", cursive;
+  font-weight: 400;
+  line-height: 1.5rem; /* 24px */
+  font-size: 1.5rem; /* 24px */
+  text-align: center;
+  gap: 0.625rem; /* 10px */
+}
+
+.form-container input {
+  width: 24.5rem; /* 392px */
+  height: 3.625rem; /* 58px */
+  border: 0.1875rem solid; /* 3px */
+  border-color: var(--quinary-color);
+  margin-bottom: 1.5rem; /* 24px */
+  margin-top: 1.5rem; /* 24px */
+  border-radius: 0.9375rem; /* 15px */
+}
+
+.form-container input::placeholder {
+  color: var(--quinary-color);
+  font-size: 16px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  line-height: 20.8px;
+}
+
+.button-container {
+  width: 24.5rem; /* 392px */
+  height: 3.4375rem; /* 55px */
+  margin-top: 1.5rem; /* 24px */
+  margin-bottom: 1.5rem; /* 24px */
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.button-container button {
+  width: 11.75rem; /* 188px */
+  height: 3.4375rem; /* 55px */
+  border-radius: 0.9375rem; /* 15px */
+}
+
+.button-submit {
+  background-color: var(--quinary-color);
+  color: var(--card-color-texto);
+  font-weight: 500;
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.625rem; /* 26px */
+  text-align: center;
+}
+
+.button-clear {
+  color: var(--quinary-color);
+  font-weight: 500;
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.625rem; /* 26px */
+  text-align: center;
+}
+body {
+  overflow-x: hidden;
+}
+/* Footer específico */
+.footer-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 200px;
+  padding: 64px;
+  background-color: var(--cuaternary-color);
+  box-shadow: 0px -10px 9.5px 0px #00000040;
+  gap: 10px;
+}
+
+.p-1 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  color: var(--card-color-texto);
+  line-height: 16px;
+  font-weight: 400;
+}
+.footer-container span {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--card-color-texto);
+}
+
+/* Media Queries para Responsividad */
+@media only screen and (min-width: 360px) and (max-width: 1200px) {
+  .main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    max-width: 360px;
+    width: 360px;
+    height: auto;
+
+    align-items: center;
+  }
+  .section-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
+    text-align: center;
+  }
+
+  .form-container input {
+    width: 16rem; /* 392px */
+    height: 3.625rem; /* 58px */
+    border: 0.1875rem solid; /* 3px */
+    border-color: var(--quinary-color);
+    margin-bottom: 1.5rem; /* 24px */
+    margin-top: 1.5rem; /* 24px */
+    border-radius: 0.9375rem; /* 15px */
+  }
+  .button-container {
+    display: flex;
+    width: 16rem; /* 392px */
+    height: 3.4375rem; /* 55px */
+    margin-top: 1.5rem; /* 24px */
+    margin-bottom: 1.5rem; /* 24px */
+    font-family: "IBM Plex Mono", monospace;
+    gap: 10px;
+  }
+
+  .text-form {
+    width: 16rem; /* 392px */
+    height: 3rem; /* 48px */
+    font-family: "Press Start 2P", cursive;
+    font-weight: 400;
+    line-height: 1.5rem; /* 24px */
+    font-size: 1.5rem; /* 24px */
+    text-align: center;
+    gap: 0.625rem; /* 10px */
+  }
+  .products-section {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    justify-content: center;
+  }
+  .products-container {
+    width: 17.5rem;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en nuevas líneas si no caben en una sola fila */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    gap: 5px; /* Espacio entre las tarjetas */
+  }
+
+  .card {
+    max-width: 360px; /* Ancho máximo para cada tarjeta */
+    width: 8.4rem;
+    height: 16rem; /* Ajusta la altura automáticamente según el contenido */
+    background-color: var(--cuaternary-color);
+    font-size: 0.75rem; /* 12px */
+    border-radius: 0.625rem; /* 10px */
+    padding: 2px;
+    gap: 5px;
+    border: 0.1875rem solid var(--primary-color); /* Borde sólido */
+    box-shadow: -0.3125rem 0.375rem 0.20625rem 0px #00000040; /* Sombra */
+  }
+  .img-container {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .img-container img {
+    width: 7.5rem;
+    height: 12rem; /* 200px */
+    border-radius: 0.3125rem; /* 5px */
+    border: 0.1875rem; /* 3px */
+    border-color: #000000;
+  }
+  .text-product {
+    width: 16rem;
+  }
+  .footer-container {
+    width: auto;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .delete-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    color: var(--cuaternary-color);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  .delete-button:hover {
+    width: 0.75rem; /* 26px */
+    height: 0.75rem; /* 26px */
+  }
+
+  .delete-button:onclick active {
+    border-color: yellowgreen;
+    width: 1rem; /* 24px */
+    height: 1rem; /* 24px */
+  }
+
+  .delete-button img {
+    width: 1.75rem; /* 24px */
+    height: 1.75rem; /* 24px */
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "productos": [
+    {
+      "id": "be9c",
+      "name": "SONIC",
+      "price": "50",
+      "image": "https://m.media-amazon.com/images/I/61R0Y52uB4L._AC_SL100_.jpg"
+    }
+  ]
+}
