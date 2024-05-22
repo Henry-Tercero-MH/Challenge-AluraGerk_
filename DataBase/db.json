@@ -1,16 +1,22 @@
 {
   "productos": [
     {
-      "id": "be9c",
-      "name": "SONIC",
-      "price": "50",
-      "image": "https://m.media-amazon.com/images/I/61R0Y52uB4L._AC_SL100_.jpg"
-    },
-    {
       "id": "cfaf",
       "name": "Marvel",
       "price": "35",
       "image": "https://xtech-frontend.s3.amazonaws.com/media/img/xtk-401im_banner_lifestyle.jpg"
+    },
+    {
+      "id": "695e",
+      "name": "Pantera Negra",
+      "price": "50",
+      "image": "https://xtech-frontend.s3.amazonaws.com/media/img/banner-lifestyle-xtm-m340bp.jpg"
+    },
+    {
+      "id": "e47d",
+      "name": "Super Hero",
+      "price": "60",
+      "image": "https://xtech-frontend.s3.amazonaws.com/media/img/personajes-top-banner-min.jpg"
     }
   ]
 }
